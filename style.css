@@ -649,3 +649,24 @@ footer > span {
  .floating {padding:11px 15px;}
 }
 @media(max-width:380px){.nav-cta {padding:9px 10px;font-size:11px;gap:5px}.nav-cta .arrow-icon{width:14px}.brand span{letter-spacing:1.3px}h1{font-size:36px}}
+
+/* Mobile-safe arrows: CSS only, no oversized SVG fallback */
+.arrow-mark {display:inline-flex!important;align-items:center;justify-content:center!important;width:16px!important;height:16px!important;min-width:16px!important;min-height:16px!important;max-width:16px!important;max-height:16px!important;line-height:1!important;font-size:0!important;vertical-align:middle;flex:0 0 16px!important;}
+.arrow-mark::after {content:"";display:block;width:7px;height:7px;border-top:2px solid currentColor;border-right:2px solid currentColor;transform:rotate(45deg);margin-left:-3px;}
+.arrow-mark::before {content:"";display:block;width:11px;height:2px;background:currentColor;margin-right:-8px;}
+.nav-cta {display:inline-flex!important;flex-direction:row!important;align-items:center!important;gap:7px!important;background:#a95868!important;color:white!important;padding:11px 14px!important;border-radius:7px!important;line-height:1.2!important;}
+.nav-cta .arrow-mark {color:white!important;}
+.button {display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:12px!important;}
+.button .arrow-mark {color:white!important;}
+.service-list article > a .arrow-mark {color:var(--rose)!important;}
+.floating {display:inline-flex!important;flex-direction:row!important;align-items:center!important;gap:7px!important;padding:11px 17px!important;line-height:1.2!important;max-width:calc(100vw - 30px)!important;}
+.floating .arrow-mark {color:white!important;}
+.text-link .arrow-mark,.phone .arrow-mark,details a .arrow-mark {display:inline-flex!important;}
+@media(max-width:700px){
+ header {align-items:center!important;}
+ .nav-cta {font-size:11px!important;padding:10px 12px!important;white-space:nowrap!important;}
+ .floating {bottom:18px!important;right:14px!important;font-size:12px!important;}
+ .about-symbol {max-width:100%!important;min-width:0!important;}
+ .about-symbol strong {font-size:clamp(36px,10vw,65px)!important;}
+ .booking {gap:28px!important;}
+}
