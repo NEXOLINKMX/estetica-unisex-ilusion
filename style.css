@@ -670,3 +670,11 @@ footer > span {
  .about-symbol strong {font-size:clamp(36px,10vw,65px)!important;}
  .booking {gap:28px!important;}
 }
+
+/* Ubicación de la estética */
+.location-section{display:grid;grid-template-columns:0.85fr 1.15fr;gap:48px;align-items:center;border-top:1px solid var(--line)}
+.location-copy p:not(.eyebrow){color:#75645d;font-size:15px;max-width:430px;margin:22px 0}
+.location-button{display:inline-flex!important;width:fit-content!important;padding:13px 25px!important}
+.location-map{width:100%;min-width:0;border:1px solid var(--line);padding:8px;background:#fff;box-shadow:10px 10px 0 var(--blush)}
+.location-map iframe{display:block;width:100%;height:340px;border:0}
+@media(max-width:700px){.location-section{grid-template-columns:1fr;gap:25px}.location-map iframe{height:290px}.location-map{box-shadow:6px 6px 0 var(--blush)}}
