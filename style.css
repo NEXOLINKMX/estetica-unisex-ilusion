@@ -621,3 +621,31 @@ footer > span {
     scroll-behavior: auto;
   }
 }
+/* Refinamientos de identidad y experiencia móvil */
+.arrow-icon {display:inline-block;width:17px;height:17px;vertical-align:middle;flex-shrink:0;}
+.nav-cta {display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--rose);color:#fff;border:1px solid var(--rose);border-radius:8px;font-weight:600;white-space:nowrap;transition:background .2s,transform .2s;}
+.nav-cta:hover {background:#874451;transform:translateY(-1px);}
+.button {border-radius:8px;justify-content:center;gap:18px;font-weight:600;}
+.button span {display:inline-flex;align-items:center;}
+.service-list article > a {transition:background .2s,border-color .2s;}
+.service-list article > a .arrow-icon {width:19px;height:19px;}
+.text-link .arrow-icon,.phone .arrow-icon,details a .arrow-icon {width:14px;height:14px;margin-left:3px;}
+.floating {display:inline-flex;align-items:center;gap:9px;border-radius:30px;}
+.floating .arrow-icon {width:15px;height:15px;}
+.about-symbol {font-size:initial;gap:6px;overflow:hidden;}
+.about-symbol .about-flower {font-size:60px;line-height:1;color:var(--gold);margin:0;letter-spacing:0;font-family:Georgia,serif;}
+.about-symbol strong {font:italic 400 clamp(40px,5vw,72px) Georgia,serif;color:var(--rose);}
+.about-symbol span:last-child {margin-top:8px;letter-spacing:3px;font-size:10px;}
+@media(max-width:700px){
+ header {gap:12px;}
+ .brand {font-size:clamp(27px,7vw,35px);flex-shrink:1;}
+ .brand span {font-size:8px;letter-spacing:2px;}
+ .nav-cta {padding:11px 13px;font-size:12px;}
+ h1 {font-size:clamp(38px,9vw,52px);letter-spacing:-1.4px;overflow-wrap:normal;}
+ .hero .intro {max-width:36ch;}
+ .service-list article {grid-template-columns:28px minmax(0,1fr) 38px;gap:10px;}
+ .service-list article > a {width:38px;height:38px;}
+ .about-symbol {min-height:240px;}
+ .floating {padding:11px 15px;}
+}
+@media(max-width:380px){.nav-cta {padding:9px 10px;font-size:11px;gap:5px}.nav-cta .arrow-icon{width:14px}.brand span{letter-spacing:1.3px}h1{font-size:36px}}
